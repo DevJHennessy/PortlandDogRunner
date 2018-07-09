@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Bootstrap CSS -->
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script> -->
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+		<!-- /Bootstrap CSS -->
+
+    <!-- Other Styles -->
+    <link rel="stylesheet" type="text/css" href="../style/mainstyle.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
+
+    <style media="screen">
+      @viewport {
+        width: auto;
+      }
+    </style>
+
+  </head>
+
+  <body>
+  <header>
+    <img src="../images/PDXDogRunnerBanner.png" alt="">
+  </header>
+
+  <nav role="navigation" class="topnav navbar navbar-light">
+    <button class="navbar-toggler mr-auto" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse" id="navbarToggleExternalContent">
+      <ul class="menu">
+        <li><a href="../index.html">HOME</a></li>
+        <li>WHAT WE DO
+        <ul class="submenu">
+          <li><a href="./about.html">ABOUT US</a></li>
+          <li><a href="./contact.html">CONTACT</a></li>
+          <li><a href="./reviews.html">REVIEWS</a></li>
+        </ul>
+        </li>
+        <li>RATES AND PAYMENT
+          <ul class="submenu">
+            <li><a href="./runningrates.html">RUNNING AND WALKING</a></li>
+            <li><a href="./sittingrates.html">PET SITTING</a></li>
+          </ul>
+          </li>
+        <li><a href="./newclients.html">NEW CLIENTS</a></li>
+        <li><a href="./blog.html">READ OUR BLOG</a></li>
+        <li>FUN STUFF
+          <ul class="submenu">
+            <li><a href="./gallery.html">GALLERY</a></li>
+            <li><a href="./links.html">LINKS</a></li>
+          </ul>
+        </li>
+      </ul>
+  </div>
+  </nav>
+
+  <aside id="aside_container">
+    <div class="wrapper">
+        <h1> Welcome to Portland Dog Runner!</h1>
+        <h2>Dog Running
+        <img class="paw" src="../images/paw-print.png" alt="">
+        Dog Walking
+        <img class="paw" src="../images/paw-print.png" alt="">
+        Pet Sitting</h2>
+
+      <img class="aside-photo" src="../images/joe-skye-kona.jpg" alt="">
+      <figcaption>Owners Skye + Joe Weadick, with our late best friend Kona</figcaption>
+
+      <h2>Bonded
+      <img class="paw" src="../images/paw-print.png" alt="">
+      Insured</h2>
+
+    </div>
+  </aside>
+
+  <main>
+    <div class="wrapper">
+      <h1>Gallery</h1>
+
+      <section id="photos">
+
+          <li data-toggle="modal" data-target="#myModal">
+            <a href="#myGallery" data-slide-to="0">
+              <img src="../images/auggie2.jpg" alt="Auggie">
+              <span>Auggie</span>
+            </a>
+        </li>
+
+        <li data-toggle="modal" data-target="#myModal">
+          <a href="#myGallery" data-slide-to="1">
+            <img src="../images/bella23.jpg" alt="Forest">
+            <span>Little Bella!</span>
+          </a>
+        </li>
+
+        <li data-toggle="modal" data-target="#myModal">
+          <a href="#myGallery" data-slide-to="2">
+            <img src="../images/bernard1.jpg" alt="Northern Lights">
+            <span>Bernard</span>
+          </a>
+        </li>
+
+        <li data-toggle="modal" data-target="#myModal">
+          <a href="#myGallery" data-slide-to="3">
+            <img src="../images/addieochi.jpg" alt="Mountains">
+            <span>Ochi & Addie</span>
+          </a>
+        </li>
+
+        <li data-toggle="modal" data-target="#myModal">
+        <a href="#myGallery" data-slide-to="4">
+          <img src="../images/bhead-molly.jpg" alt="Mountains">
+          <span>Blockhead & Molly</span>
+        </a>
+        </li>
+
+        <li data-toggle="modal" data-target="#myModal">
+        <a href="#myGallery" data-slide-to="5">
+          <img src="../images/frisbee.jpg" alt="Mountains">
+          <span>Maxwell</span>
+        </a>
+        </li>
+
+        <li data-toggle="modal" data-target="#myModal">
+        <a href="#myGallery" data-slide-to="6">
+          <img src="../images/helen-and-maxwell-snow.jpg" alt="Mountains">
+          <span>Helen & Maxwell</span>
+        </a>
+        </li>
+
+        <li data-toggle="modal" data-target="#myModal">
+        <a href="#myGallery" data-slide-to="7">
+          <img src="../images/hoy.jpg" alt="Mountains">
+          <span>Hoy!</span>
+        </a>
+        </li>
+
+        <li data-toggle="modal" data-target="#myModal">
+        <a href="#myGallery" data-slide-to="8">
+          <img src="../images/img_2707.jpg" alt="Mountains">
+          <span>Desodo</span>
+        </a>
+        </li>
+
+        <li data-toggle="modal" data-target="#myModal">
+        <a href="#myGallery" data-slide-to="9">
+          <img src="../images/img_31141.jpg" alt="Mountains">
+          <span>Metta pondering the snow</span>
+        </a>
+        </li>
+
+        <li data-toggle="modal" data-target="#myModal">
+        <a href="#myGallery" data-slide-to="10">
+          <img src="../images/lizzie.jpg" alt="Mountains">
+          <span>Lizzie</span>
+        </a>
+        </li>
+
+        <li data-toggle="modal" data-target="#myModal">
+        <a href="#myGallery" data-slide-to="11">
+          <img src="../images/mister1.jpg" alt="Mountains">
+          <span>Mister</span>
+        </a>
+        </li>
+
+        <li data-toggle="modal" data-target="#myModal">
+        <a href="#myGallery" data-slide-to="12">
+          <img src="../images/oliver.jpg" alt="Mountains">
+          <span>Oliver!</span>
+        </a>
+        </li>
+
+        <li data-toggle="modal" data-target="#myModal">
+        <a href="#myGallery" data-slide-to="13">
+          <img src="../images/pdr-mutt-strut.jpg" alt="Mountains">
+          <span>PDR "Dog Pack" at Portland Mutt Strutt</span>
+        </a>
+        </li>
+
+        <li data-toggle="modal" data-target="#myModal">
+        <a href="#myGallery" data-slide-to="14">
+          <img src="../images/rohn.jpg" alt="Mountains">
+          <span>Rohn</span>
+        </a>
+        </li>
+
+        <li data-toggle="modal" data-target="#myModal">
+        <a href="#myGallery" data-slide-to="15">
+          <img src="../images/skye-doober.jpg" alt="Mountains">
+          <span>Doober & Skye</span>
+        </a>
+        </li>
+
+        <li data-toggle="modal" data-target="#myModal">
+        <a href="#myGallery" data-slide-to="16">
+          <img src="../images/star.jpg" alt="Mountains">
+          <span>Star</span>
+        </a>
+        </li>
+
+        <li data-toggle="modal" data-target="#myModal">
+        <a href="#myGallery" data-slide-to="17">
+          <img src="../images/salvador-2.jpg" alt="Mountains">
+          <span>Salvadore</span>
+        </a>
+        </li>
+
+        <li data-toggle="modal" data-target="#myModal">
+        <a href="#myGallery" data-slide-to="18">
+          <img src="../images/brad-ziggy-larson.jpg" alt="">
+          <span>Brad, Ziggy, & Larson</span>
+        </a>
+        </li>
+
+
+      </section>
+
+      <!--begin modal window-->
+        <div class="modal fade" id="myModal">
+        <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+        <div class="modal-header">
+        <div>PDR Dogs and Runners</div>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span></button>
+        </div>
+        <div class="modal-body">
+
+        <!--CAROUSEL CODE GOES HERE-->
+        <!--begin carousel-->
+
+        <div id="myGallery" class="carousel slide" data-ride="carousel" data-interval="false">
+          <div class="carousel-inner">
+
+            <div class="carousel-item active">
+              <img class="d-block w-100" src="../images/auggie2.jpg" alt="item0">
+            </div>
+
+            <div class="carousel-item">
+              <img class="d-block w-100" src="../images/bella23.jpg" alt="item1">
+            </div>
+
+            <div class="carousel-item">
+              <img class="d-block w-100" src="../images/bernard1.jpg" alt="item2">
+            </div>
+
+            <div class="carousel-item">
+              <img class="d-block w-100" src="../images/addieochi.jpg" alt="item3">
+            </div>
+
+            <div class="carousel-item">
+              <img class="d-block w-100" src="../images/bhead-molly.jpg" alt="item4">
+            </div>
+
+            <div class="carousel-item">
+              <img class="d-block w-100" src="../images/frisbee.jpg" alt="item5">
+            </div>
+
+            <div class="carousel-item">
+              <img class="d-block w-100" src="../images/helen-and-maxwell-snow.jpg" alt="item6">
+            </div>
+
+            <div class="carousel-item">
+              <img class="d-block w-100" src="../images/hoy.jpg" alt="item7">
+            </div>
+
+            <div class="carousel-item">
+              <img class="d-block w-100" src="../images/img_2707.jpg" alt="item8">
+            </div>
+
+            <div class="carousel-item">
+              <img class="d-block w-100" src="../images/img_31141.jpg" alt="item9">
+            </div>
+
+            <div class="carousel-item">
+              <img class="d-block w-100" src="../images/lizzie.jpg" alt="item10">
+            </div>
+
+            <div class="carousel-item">
+              <img class="d-block w-100" src="../images/mister1.jpg" alt="item11">
+            </div>
+
+            <div class="carousel-item">
+              <img class="d-block w-100" src="../images/oliver.jpg" alt="item12">
+            </div>
+
+            <div class="carousel-item">
+              <img class="d-block w-100" src="../images/pdr-mutt-strut.jpg" alt="item13">
+            </div>
+
+            <div class="carousel-item">
+              <img class="d-block w-100" src="../images/rohn.jpg" alt="item14">
+            </div>
+
+            <div class="carousel-item">
+              <img class="d-block w-100" src="../images/skye-doober.jpg" alt="item15">
+            </div>
+
+            <div class="carousel-item">
+              <img class="d-block w-100" src="../images/star.jpg" alt="item16">
+            </div>
+
+            <div class="carousel-item">
+              <img class="d-block w-100" src="../images/salvador-2.jpg" alt="item17">
+            </div>
+
+            <div class="carousel-item">
+              <img class="d-block w-100" src="../images/brad-ziggy-larson.jpg" alt="item18">
+            </div>
+
+          </div>
+
+          <!--end carousel-inner-->
+          </div>
+          <!--Begin Previous and Next buttons-->
+          <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          </a>
+          </div>
+        <!--end carousel-->
+
+        <!--end modal-body--></div>
+        <!-- <div class="modal-footer">
+        <button class="btn close" type="button" data-dismiss="modal">Close</button>
+        </div> -->
+        <!--end modal-footer-->
+        <!--end modal-content--></div>
+        <!--end modal-dialoge--></div>
+      <!--end myModal-->></div>
+
+    </div>
+  </main>
+
+  <script type="text/javascript" src="../js/pdr.js"></script>
+
+  </body>
+  </html>

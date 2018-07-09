@@ -1,0 +1,506 @@
+/* Body */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #ff366d;
+}
+/*Header*/
+
+header img {
+  width: 100%;
+  height: 100%;
+  vertical-align: bottom;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  line-height: inherit;
+}
+
+.h1, h1 {
+  /* font-size: 2em; */
+  font-size: 1.15em;
+}
+
+.h2, h2 {
+  /* font-size: 1.5em; */
+  font-size: .90em;
+}
+
+/*Navigation*/
+nav {
+  background-color: #e7c90f;
+  font-family: 'Oxygen', sans-serif;
+  top: 0;
+  left: 0;
+  position: relative;
+	width: 100%;
+  /* text-align: center; */
+  z-index: 2;
+  color: #fff;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.navbar {
+  margin-bottom: inherit;
+  -webkit-box-direction: normal;
+  display: inline-block;
+}
+
+.menu {
+	text-align: center;
+	/* display: inline; */
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.menu ul {
+  display: inline;
+}
+
+.menu li {
+	color: #fff;
+  /* display: inline-block; */
+	display: flex;
+	margin-right: -2px;
+	position: relative;
+	padding: 12px 20px;
+  border: none;
+	/* border: 1px solid #ff366d; */
+	border-radius: 1.5px;
+	background-color: #e7c90f;
+	cursor: pointer;
+}
+
+.menu li:hover {
+	background-color: #f4df57;
+	color: #fff;
+  text-decoration: none;
+}
+
+.menu li:hover > ul {
+	display: block;
+	opacity: 1;
+	/* While hovered, drop down-menu appears. This also avoids a block-level bug. */
+	visibility: visible;
+}
+.submenu {
+	padding: 0;
+	left: 0;
+	position: absolute;
+	/* top: 48px; */
+  top: 0;
+	/* width: 100%; */
+  width: 160px;
+	opacity: 1;
+	/* While not being hovered, drop-down menu hides. This also avoids a block-level bug. */
+	visibility: hidden;
+}
+
+.submenu li {
+	background-color: #ff366d;
+	display: block;
+	color: #fff;
+  left: 100%;
+  z-index: 3;
+  /* padding: 12px 10px; */
+}
+
+.submenu li:hover {
+	color: #fff;
+  /* display: block; */
+	background-color: #ff80a2;
+}
+
+.submenu li:hover ul {
+	display: block;
+	opacity: 1;
+	/* While hovered, drop down-menu appears. This also avoids a block-level bug. */
+	visibility: visible;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.navbar {
+  padding: 0;
+}
+
+/* Aside */
+
+.aside-hidden {
+  display: none;
+}
+
+aside {
+  display: block;
+  width: 100%;
+  background-color: #ff366d;
+  color: #fff;
+  font-family: 'Fjalla One', sans-serif;
+  margin: 0 auto;
+}
+
+#aside-wrapper {
+  /* position: fixed;
+  top: 0; */
+}
+
+.fixed_aside {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+}
+
+.aside-photo {
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+}
+
+aside h1, h2 {
+  text-align: center;
+}
+
+aside figcaption {
+  display: block;
+  font-family: 'Oxygen', sans-serif;
+  text-align: center;
+  margin: 0 auto;
+  width: 80%
+}
+
+.paw {
+  width: 25px;
+  height: 26px;
+  position: relative;
+  top: 3px;
+}
+
+
+/* Main Content */
+main {
+  width: 100%;
+  min-height: 1000px;
+  background-color: #fff;
+  overflow: scroll;
+
+}
+main h1 {
+  font-size: 2em;
+  font-family: 'Fjalla One', sans-serif;
+  color: #ff366d;
+  text-align: center;
+}
+
+main p {
+  font-family: 'Oxygen', sans-serif;
+  letter-spacing: 1px;
+  line-height: 1.5;
+}
+
+/* About Page */
+.about-image {
+  display: inline-block;
+  width: 60%;
+  text-align: center;
+  font-family: 'Oxygen', sans-serif;
+  float: left;
+  margin-right: 4%;
+  color: #ff366d;
+  /* margin: 0 auto; */
+}
+
+figcaption {
+  padding-top: 3px;
+  padding-bottom: 10px;
+}
+
+.about-photo-text {
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 90%
+}
+
+/* Contact Form */
+
+input {
+  margin: 10px 0px;
+}
+
+input:required, input[required] {
+  border: 2px solid red;
+}
+
+label {
+  padding: 10px 0px;
+}
+
+
+textarea {
+  width: 80%;
+  height: 100px;
+  border: 2px solid red;
+  margin: 10px 0px;
+
+}
+
+main ul {
+  list-style-type: none;
+  /* font-size: 20px; */
+  font-family: 'Oxygen', sans-serif;
+}
+
+/* Gallery Styling */
+
+div.gallery {
+    border: 1px solid #e7c90f;
+}
+
+div.gallery:hover {
+    border: 1px solid #ff366d;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+/* * {
+    box-sizing: border-box;
+} */
+
+.responsive {
+    padding: 2px 6px;
+    float: left;
+    width: 24.99999%;
+}
+
+#photos {
+  /* Prevent vertical gaps */
+line-height: 0;
+
+-webkit-column-count: 2;
+-webkit-column-gap:   0px;
+-moz-column-count:    2;
+-moz-column-gap:      0px;
+column-count:         2;
+column-gap:           0px;
+}
+
+img {
+  vertical-align: inherit;
+}
+
+.carousel-caption {
+  bottom: 0;
+  padding-bottom: 0px;
+}
+
+.modal-dialog {
+    /* position: relative; */
+    /* display: table; /* This is important */ */
+    overflow-y: auto;
+    overflow-x: auto;
+    /* width: auto; */
+    /* min-width: 300px; */
+    max-height: screen;
+}
+
+#photos img {
+  /* Just in case there are inline attributes */
+  width: 100% !important;
+  height: auto !important;
+}
+
+#photos a {
+  position: relative;
+  text-decoration: none;
+  color: #fff;
+}
+
+#photos li a span {
+  position: absolute;
+  bottom: 0;
+
+}
+
+#photos a span {
+  display: none;
+  /* position: absolute;
+  bottom: 0; */
+  width: 100%;
+  padding: 14px;
+  background: rgba(255,54,109,.8);
+}
+
+#photos a:hover span {
+   display: block;
+}
+
+/* @media queries */
+
+@media only screen and (min-width: 356px) {
+  .h1, h1 {
+    /* font-size: 2em; */
+    font-size: 1.5em;
+  }
+
+  .h2, h2 {
+    /* font-size: 1.5em; */
+    font-size: 1.15em;
+  }
+
+  .submenu {
+    width: 180px;
+  }
+}
+
+@media only screen and (min-width: 363px) {
+  .submenu {
+    width: 200px;
+  }
+}
+
+@media only screen and (min-width: 400px) {
+  .submenu {
+    width: 210px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+
+  .aside-hidden {
+    display: inline;
+  }
+
+  .h1, h1 {
+    font-size: 1.25em;
+  }
+
+  .h2, h2 {
+    font-size: .94em;
+  }
+
+  .collapse:not(.show) {
+      display: inline;
+  }
+
+  .navbar-toggler {
+    display: none;
+  }
+
+  nav {
+    text-align: center;
+  }
+
+  .menu {
+    display: inline;
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .menu li {
+    display: inline-block;
+    padding: 12px 16px;
+  }
+
+  .collapse {
+    display: flex;
+  }
+
+  .submenu {
+    width: 100%;
+    top: 44.667px;
+  }
+
+  .submenu li {
+    left: 0;
+    width: 100%;
+  }
+
+  main {
+    float: right;
+    width: 60%;
+  }
+
+  aside {
+    float: left;
+    width: 40%;
+  }
+
+
+}
+
+
+@media only screen and (min-width: 1044px) {
+
+  .h1, h1 {
+    /* font-size: 2em; */
+    font-size: 1.5em;
+  }
+
+  .h2, h2 {
+    /* font-size: 1.5em; */
+    font-size: 1.25em;
+  }
+
+  .navbar-toggler {
+    display: none;
+  }
+
+  .menu {
+    display: inline;
+    width: 100%;
+    font-size: 16px;
+  }
+
+  .menu li {
+    display: inline-block;
+    padding: 12px 30px;
+
+  }
+
+  .collapse {
+    display: flex;
+  }
+
+  .submenu {
+    width: 100%;
+    top: 48px;
+  }
+
+  .submenu li {
+    left: 0;
+    width: 100%;
+  }
+
+  main {
+    float: right;
+    width: 60%;
+  }
+
+  aside {
+    float: left;
+    width: 40%;
+  }
+}
