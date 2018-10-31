@@ -452,7 +452,7 @@ img {
 }
 
 
-@media only screen and (min-width: 1044px) {
+@media only screen and (min-width: 1076px) {
 
   .h1, h1 {
     /* font-size: 2em; */
@@ -478,6 +478,10 @@ img {
     display: inline-block;
     padding: 12px 30px;
 
+  }
+
+  .drop-down-arrow {
+    display: none;
   }
 
   .collapse {
