@@ -23,7 +23,7 @@ $(document).ready(function () {
 
 $(window).on('resize', function(e) {
 
-  if ($(window).width() > 833) {
+  if ($(window).width() > 767) {
     $(document).ready(function () {
         $(window).scroll(function () {
           if ($(window).scrollTop() > 300) {
@@ -39,7 +39,7 @@ $(window).on('resize', function(e) {
 
 $(window).on('resize', function(e) {
 
-  if ($(window).width() < 833) {
+  if ($(window).width() < 767) {
     $(document).ready(function () {
         $(window).scroll(function () {
           if ($(window).scrollTop() > 300) {
